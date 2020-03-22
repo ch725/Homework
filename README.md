@@ -1,16 +1,35 @@
 # Homework
-实现 fibonacci 数列，要求(以Java为例)如下
-不要提交依赖包等文件
-分两次提交，第一次提交README.md，第二次提交代码
-函数名为 Fibonacci.of()
-of是一个静态方法，入参是int，返回值是int
-参数从1开始，各参考值如下
-Fibonacci.of(1) == 1
-Fibonacci.of(2) == 1
-Fibonacci.of(3) == 2
-Fibonacci.of(4) == 3
-Fibonacci.of(5) == 5
-...
-在main函数用循环打印1~200的Fibonacci数列
+
+使用node框架，构建一个Restful API，能够完成Todo list的以下功能:
+
+1）返回所有Todo任务
+
+2）创建一个新的Todo任务
+
+3）返回一个指定ID的Todo任务
+
+4）删除一个Todo任务
+
+为简化流程，不引入数据存储，即，不需要做数据持久化，可以在服务器运行时满足功能即可。
+
+Todo中一个任务的JSON格式定义为：
+
+{
+   "id": 1,
+   "content": "Restful API homework",
+   "createdTime": "2019-05-15T00:00:00Z"
+}
+
+进一步的功能提示：需完成的四个功能的Restful API定义如下，实现即可。
+
+GET /api/tasks/
+
+POST /api/tasks/
+
+GET /api/tasks/{id}
+
+DELETE /api/tasks/{id}
+
 提交到自己的github
+
 将作业的github地址写在答案中
